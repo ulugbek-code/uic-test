@@ -1,14 +1,14 @@
 <template>
-  <section class="h-screen bg-sky-100">
+  <section class="min-h-screen bg-sky-100">
     <div class="container h-full mx-auto flex-col py-28">
       <div class="text-gray-800 text-center mb-32">
         <h5 class="text-xl font-semibold mb-5">Our Services</h5>
-        <h2 class="text-4xl font-semibold leading-snug">
+        <h2 class="text-2xl sm:text-4xl font-semibold leading-snug">
           4 Step Easy We Care Your <br />
           Health
         </h2>
       </div>
-      <div class="flex justify-center gap-x-20">
+      <div class="md:flex justify-center gap-x-20">
         <div
           class="
             each
@@ -84,5 +84,10 @@ export default {};
 .each img {
   top: -3.6rem;
   transform: translateX(-50%);
+}
+@media (max-width: 768px) {
+  .each:not(:last-child) {
+    margin-bottom: 5rem;
+  }
 }
 </style>

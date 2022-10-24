@@ -3,14 +3,24 @@
     <div class="container mx-auto">
       <div class="text-gray-800 mb-12">
         <h5 class="text-xl font-semibold text-zinc-800 mb-5">Testimonials</h5>
-        <h2 class="text-4xl font-semibold text-zinc-800 leading-snug">
+        <h2
+          class="text-2xl md:text-4xl font-semibold text-zinc-800 leading-snug"
+        >
           What they say after visiting <br />
           our hospital
         </h2>
       </div>
-      <div class="flex gap-4 mb-20">
+      <div class="sm:flex gap-4 mb-20">
         <div
-          class="flex-1 bg-sky-100 rounded-md overflow-hidden drop-shadow-lg"
+          class="
+            flex-1
+            bg-sky-100
+            rounded-md
+            overflow-hidden
+            drop-shadow-lg
+            mb-6
+            sm:mb-0
+          "
         >
           <img
             src="../../assets/doc-section1.jpg"
@@ -49,11 +59,13 @@
         </div>
       </div>
       <div class="bg-stone-800 text-white p-12">
-        <h3 class="text-4xl font-semibold mb-10 w-1/3">
+        <h3 class="text-xl sm:text-4xl font-semibold mb-10 w-full sm:w-1/3">
           Let's consult your health with our doctor
         </h3>
-        <div class="flex justify-between items-center">
-          <h6 class="text-lg font-medium">We will provide the best service.</h6>
+        <div class="sm:flex justify-between items-center">
+          <h6 class="text-normal sm:text-lg font-medium mb-4 sm:mb-0">
+            We will provide the best service.
+          </h6>
           <the-button title="Contact Us"></the-button>
         </div>
       </div>

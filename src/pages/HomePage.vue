@@ -1,10 +1,12 @@
 <template>
-  <show-case></show-case>
-  <service-section></service-section>
-  <about-us></about-us>
-  <doctors-section></doctors-section>
-  <testimonial-section></testimonial-section>
-  <the-footer></the-footer>
+  <div class="overflow-hidden">
+    <show-case></show-case>
+    <service-section></service-section>
+    <about-us></about-us>
+    <doctors-section></doctors-section>
+    <testimonial-section></testimonial-section>
+    <the-footer></the-footer>
+  </div>
 </template>
 
 <script>

@@ -1,10 +1,10 @@
 <template>
   <footer class="bg-sky-100 py-16">
     <div class="container mx-auto">
-      <div class="flex justify-between">
+      <div class="sm:flex justify-between">
         <div class="basis-3/6">
           <img src="../../assets/logo.svg" alt="" />
-          <p class="w-4/5 leading-7 my-4">
+          <p class="w-full sm:w-4/5 leading-7 my-4">
             Our hospital tries to answer the challenges in the community's need
             for quality dental health services but still affordable by a wide
             audience.
@@ -42,7 +42,7 @@
             />
           </div>
         </div>
-        <div class="basis-1/6">
+        <div class="basis-1/6 my-8 sm:my-0 text-center sm:text-left">
           <h5 class="text-xl font-semibold">Menus</h5>
           <ul>
             <li class="my-3 hover:text-sky-400">
@@ -70,7 +70,9 @@
             "
             placeholder="Enter Your Email"
           />
-          <the-button title="Subscribe"></the-button>
+          <div class="float-right sm:float-left">
+            <the-button title="Subscribe"></the-button>
+          </div>
         </div>
       </div>
     </div>
