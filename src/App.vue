@@ -12,4 +12,9 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.container {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+</style>
