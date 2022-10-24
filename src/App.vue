@@ -1,9 +1,15 @@
 <template>
-  <div class="">hello</div>
+  <nav-bar></nav-bar>
+  <router-view></router-view>
 </template>
 
 <script>
-export default {};
+import NavBar from "./components/UI/NavBar.vue";
+export default {
+  components: {
+    NavBar,
+  },
+};
 </script>
 
 <style></style>
