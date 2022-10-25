@@ -6,7 +6,12 @@
     @mouseenter="isOpened = true"
     @mouseleave="isOpened = false"
   >
-    <img v-lazy="avatar" alt="" class="w-full object-cover drop-shadow-md" />
+    <img
+      v-lazy="avatar"
+      alt=""
+      id="hero-img'"
+      class="w-full object-cover drop-shadow-md"
+    />
     <transition name="fade">
       <doctor-card
         v-if="isOpened"
@@ -27,12 +32,8 @@ export default {
   data() {
     return {
       isOpened: false,
+      avatar: new URL(this.person, import.meta.url).href,
     };
-  },
-  computed: {
-    avatar() {
-      return new URL(this.person, import.meta.url).href;
-    },
   },
 };
 </script>

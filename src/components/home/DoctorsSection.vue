@@ -10,9 +10,11 @@
           Specialists
         </h2>
       </div>
-      <div class="md:flex flex-wrap gap-8 gap-y-20 mb-12 lg:mb-0">
+      <div
+        class="md:flex flex-wrap justify-center gap-8 gap-y-20 mb-12 lg:mb-0"
+      >
         <each-doctor
-          person="../../assets/person1.jpg"
+          :person="'../../assets/person1.jpg'"
           name="dr. Moeharman, Sp. THT.KL"
           orientation="Orthodontist"
           fade="fade-right"
