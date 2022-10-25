@@ -10,10 +10,10 @@
           Specialists
         </h2>
       </div>
-      <div class="md:flex gap-8">
-        <div class="relative flex-1 doctor">
+      <div class="md:flex flex-wrap gap-8 gap-y-20 mb-12 lg:mb-0">
+        <div class="relative md:w-45 lg:flex-1 doctor">
           <img
-            src="../../assets/person1.jpg"
+            v-lazy="person1"
             alt=""
             class="w-full object-cover drop-shadow-md"
           />
@@ -22,9 +22,9 @@
             position="Orthodontist"
           ></doctor-card>
         </div>
-        <div class="relative flex-1 doctor">
+        <div class="relative md:w-45 lg:flex-1 doctor">
           <img
-            src="../../assets/person2.png"
+            v-lazy="person2"
             alt=""
             class="w-full object-cover drop-shadow-md"
           />
@@ -33,9 +33,9 @@
             position="Pediatric "
           ></doctor-card>
         </div>
-        <div class="relative flex-1 doctor">
+        <div class="relative md:w-45 lg:flex-1 doctor">
           <img
-            src="../../assets/person3.png"
+            v-lazy="person3"
             alt=""
             class="w-full object-cover drop-shadow-md"
           />
@@ -44,9 +44,9 @@
             position="Dentist"
           ></doctor-card>
         </div>
-        <div class="relative flex-1 doctor">
+        <div class="relative md:w-45 lg:flex-1 doctor">
           <img
-            src="../../assets/person4.png"
+            v-lazy="person4"
             alt=""
             class="w-full object-cover drop-shadow-md"
           />
@@ -65,6 +65,14 @@ import DoctorCard from "../UI/DoctorCard.vue";
 export default {
   components: {
     DoctorCard,
+  },
+  data() {
+    return {
+      person1: new URL("../../assets/person1.jpg", import.meta.url).href,
+      person2: new URL("../../assets/person2.png", import.meta.url).href,
+      person3: new URL("../../assets/person3.png", import.meta.url).href,
+      person4: new URL("../../assets/person4.png", import.meta.url).href,
+    };
   },
 };
 </script>

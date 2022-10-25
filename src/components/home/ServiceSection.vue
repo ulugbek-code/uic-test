@@ -8,24 +8,25 @@
           Health
         </h2>
       </div>
-      <div class="md:flex justify-center gap-x-20">
+      <div
+        class="xl:w-3/4 mx-auto md:flex justify-center md:gap-x-4 lg:gap-x-12"
+      >
         <div
           class="
             each
+            flex-1
             relative
             text-center
-            px-20
-            pt-24
-            pb-12
             bg-white
             rounded-sm
+            pt-20
+            pb-8
+            px-8
+            md:px-2
+            lg:px-8
           "
         >
-          <img
-            src="../../assets/calendar.png"
-            class="absolute left-1/2"
-            alt=""
-          />
+          <img v-lazy="calendar" class="absolute left-1/2" alt="" />
           <h6 class="text-xl font-semibold mb-2">Date</h6>
           <p class="text-lg text-slate-400">
             Choose what date <br />
@@ -38,14 +39,17 @@
             each
             relative
             text-center
-            px-20
-            pt-24
-            pb-12
+            flex-1
             bg-white
             rounded-sm
+            pt-20
+            pb-8
+            px-8
+            md:px-2
+            lg:px-8
           "
         >
-          <img src="../../assets/heart.png" class="absolute left-1/2" alt="" />
+          <img v-lazy="heart" class="absolute left-1/2" alt="" />
           <h6 class="text-xl font-semibold mb-2">Poly</h6>
           <p class="text-lg text-slate-400">
             Choose what Poly <br />
@@ -57,14 +61,17 @@
             each
             relative
             text-center
-            px-20
-            pt-24
-            pb-12
+            flex-1
             bg-white
             rounded-sm
+            pt-20
+            pb-8
+            px-8
+            md:px-2
+            lg:px-8
           "
         >
-          <img src="../../assets/doctor.png" class="absolute left-1/2" alt="" />
+          <img v-lazy="doctor" class="absolute left-1/2" alt="" />
           <h6 class="text-xl font-semibold mb-2">Doctor</h6>
           <p class="text-lg text-slate-400">
             And choose doctor <br />
@@ -77,7 +84,15 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      calendar: new URL("../../assets/calendar.png", import.meta.url).href,
+      heart: new URL("../../assets/heart.png", import.meta.url).href,
+      doctor: new URL("../../assets/doctor.png", import.meta.url).href,
+    };
+  },
+};
 </script>
 
 <style scoped>

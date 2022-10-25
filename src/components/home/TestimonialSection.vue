@@ -22,11 +22,7 @@
             sm:mb-0
           "
         >
-          <img
-            src="../../assets/doc-section1.jpg"
-            class="w-full object-cover"
-            alt=""
-          />
+          <img v-lazy="docSection1" class="w-full object-cover" alt="" />
           <div class="p-3">
             <h6 class="font-bold text-xl">John Doe</h6>
             <p class="w-5/6 text-lg leading-6 text-gray-800 my-3">
@@ -34,18 +30,14 @@
               friendly and provided very clear information.
             </p>
             <div class="mb-2">
-              <img src="../../assets/stars.svg" alt="" class="mx-auto" />
+              <img v-lazy="stars" alt="" class="mx-auto" />
             </div>
           </div>
         </div>
         <div
           class="flex-1 bg-sky-100 rounded-md overflow-hidden drop-shadow-lg"
         >
-          <img
-            src="../../assets/doc-section2.jpg"
-            class="w-full object-cover"
-            alt=""
-          />
+          <img v-lazy="docSection2" class="w-full object-cover" alt="" />
           <div class="p-3">
             <h6 class="font-bold text-xl">John Doe</h6>
             <p class="w-5/6 text-lg leading-6 text-gray-800 my-3">
@@ -53,13 +45,13 @@
               friendly and provided very clear information.
             </p>
             <div class="mb-2">
-              <img src="../../assets/stars.svg" alt="" class="mx-auto" />
+              <img v-lazy="stars" alt="" class="mx-auto" />
             </div>
           </div>
         </div>
       </div>
       <div class="bg-stone-800 text-white p-12">
-        <h3 class="text-xl sm:text-4xl font-semibold mb-10 w-full sm:w-1/3">
+        <h3 class="text-xl sm:text-4xl font-semibold mb-10 w-full md:w-3/4">
           Let's consult your health with our doctor
         </h3>
         <div class="sm:flex justify-between items-center">
@@ -74,7 +66,17 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      stars: new URL("../../assets/stars.svg", import.meta.url).href,
+      docSection1: new URL("../../assets/doc-section1.jpg", import.meta.url)
+        .href,
+      docSection2: new URL("../../assets/doc-section2.jpg", import.meta.url)
+        .href,
+    };
+  },
+};
 </script>
 
 <style></style>

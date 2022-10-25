@@ -42,7 +42,7 @@
             />
           </div>
         </div>
-        <div class="basis-1/6 my-8 sm:my-0 text-center sm:text-left">
+        <div class="basis-1/6 my-8 sm:my-0">
           <h5 class="text-xl font-semibold">Menus</h5>
           <ul>
             <li class="my-3 hover:text-sky-400">
@@ -70,7 +70,7 @@
             "
             placeholder="Enter Your Email"
           />
-          <div class="float-right sm:float-left">
+          <div>
             <the-button title="Subscribe"></the-button>
           </div>
         </div>

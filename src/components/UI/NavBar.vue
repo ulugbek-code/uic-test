@@ -1,7 +1,7 @@
 <template>
   <header :class="{ 'bg-white': isMobileOpen }">
     <div class="container mx-auto">
-      <nav class="flex justify-between items-center">
+      <nav class="flex justify-between items-center h-15">
         <div>
           <img src="../../assets/logo.svg" class="cursor-pointer" alt="" />
         </div>
@@ -84,9 +84,6 @@ export default {
 </script>
 
 <style scoped>
-nav {
-  height: 15vh;
-}
 a.router-link-active {
   color: rgb(56 189 248);
 }

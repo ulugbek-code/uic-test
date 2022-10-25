@@ -1,5 +1,5 @@
 <template>
-  <section class="showcase">
+  <section class="h-900">
     <div class="container mx-auto h-full">
       <div class="flex h-full w-full items-center">
         <div class="flex-1">
@@ -12,23 +12,26 @@
           </h5>
           <the-button title="Check Now"></the-button>
         </div>
-        <div class="hidden sm:block flex-1 md:h-full">
-          <img src="../../assets/hero.png" class="ml-auto md:h-5/6" alt="" />
+        <div class="hidden sm:block flex-1">
+          <img v-lazy="hero" class="ml-auto" alt="" />
         </div>
       </div>
     </div>
     <div class="h-screen absolute top-0 -z-10">
-      <img src="../../assets/circle.png" alt="" class="w-full h-full" />
+      <img v-lazy="circle" alt="" class="w-full h-full" />
     </div>
   </section>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      hero: new URL("../../assets/hero.png", import.meta.url).href,
+      circle: new URL("../../assets/circle.png", import.meta.url).href,
+    };
+  },
+};
 </script>
 
-<style scoped>
-.showcase {
-  height: 90vh;
-}
-</style>
+<style scoped></style>
