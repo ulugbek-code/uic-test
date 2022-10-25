@@ -45,13 +45,13 @@
         <div class="basis-1/6 my-8 sm:my-0">
           <h5 class="text-xl font-semibold">Menus</h5>
           <ul>
-            <li class="my-3 hover:text-sky-400">
+            <li class="my-3 hover:text-sky-400 transition">
               <router-link to="/about">About</router-link>
             </li>
-            <li class="my-3 hover:text-sky-400">
+            <li class="my-3 hover:text-sky-400 transition">
               <router-link to="/">Home</router-link>
             </li>
-            <li class="my-3 hover:text-sky-400">
+            <li class="my-3 hover:text-sky-400 transition">
               <router-link to="/service">Service</router-link>
             </li>
           </ul>

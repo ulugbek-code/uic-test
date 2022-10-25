@@ -1,7 +1,7 @@
 <template>
   <header
     class="duration-75 ease-linear"
-    :class="{ 'bg-white': isMobileOpen, 'delay-60': !isMobileOpen }"
+    :class="{ 'bg-white': isMobileOpen, 'delay-40': !isMobileOpen }"
   >
     <div class="container mx-auto">
       <transition name="nav" appear>

@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       transitionDelay: {
-        60: "60ms",
+        40: "40ms",
       },
       height: {
         90: "90%",
