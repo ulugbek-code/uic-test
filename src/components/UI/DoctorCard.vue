@@ -9,6 +9,7 @@
       p-2
       lg:p-4
       drop-shadow-md
+      transition-all
     "
   >
     <div class="flex gap-4">
@@ -40,4 +41,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.each-card {
+  bottom: -3rem;
+}
+</style>

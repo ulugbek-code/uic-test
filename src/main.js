@@ -5,12 +5,17 @@ import router from "./router";
 import TheButton from "./components/UI/TheButton.vue";
 import TheFooter from "./components/UI/TheFooter.vue";
 import VueLazyLoad from "vue3-lazyload";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init({
+  duration: 700,
+});
 
 const app = createApp(App);
 app.use(router);
 app.use(VueLazyLoad, {
-  loading: "https://miro.medium.com/max/1080/0*DqHGYPBA-ANwsma2.gif",
-  error: "https://static.thenounproject.com/png/504708-200.png",
+  loading: "",
+  error: "",
 });
 app.component("the-button", TheButton);
 app.component("the-footer", TheFooter);

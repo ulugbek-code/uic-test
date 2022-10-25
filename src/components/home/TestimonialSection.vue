@@ -1,7 +1,7 @@
 <template>
   <section class="pt-12">
     <div class="container mx-auto">
-      <div class="text-gray-800 mb-12">
+      <div data-aos="fade-right" class="text-gray-800 mb-12">
         <h5 class="text-xl font-semibold text-zinc-800 mb-5">Testimonials</h5>
         <h2
           class="text-2xl md:text-4xl font-semibold text-zinc-800 leading-snug"
@@ -12,14 +12,18 @@
       </div>
       <div class="sm:flex gap-4 mb-20">
         <div
+          data-aos="fade-up-right"
           class="
             flex-1
             bg-sky-100
             rounded-md
             overflow-hidden
-            drop-shadow-lg
+            drop-shadow-md
             mb-6
+            transition-all
+            cursor-pointer
             sm:mb-0
+            hover:shadow-lg
           "
         >
           <img v-lazy="docSection1" class="w-full object-cover" alt="" />
@@ -35,7 +39,17 @@
           </div>
         </div>
         <div
-          class="flex-1 bg-sky-100 rounded-md overflow-hidden drop-shadow-lg"
+          data-aos="fade-up-left"
+          class="
+            flex-1
+            bg-sky-100
+            rounded-md
+            overflow-hidden
+            drop-shadow-lg
+            cursor-pointer
+            transition-all
+            hover:shadow-lg
+          "
         >
           <img v-lazy="docSection2" class="w-full object-cover" alt="" />
           <div class="p-3">
@@ -50,7 +64,7 @@
           </div>
         </div>
       </div>
-      <div class="bg-stone-800 text-white p-12">
+      <div data-aos="fade-up" class="bg-stone-800 text-white p-12">
         <h3 class="text-xl sm:text-4xl font-semibold mb-10 w-full md:w-3/4">
           Let's consult your health with our doctor
         </h3>
@@ -58,7 +72,7 @@
           <h6 class="text-normal sm:text-lg font-medium mb-4 sm:mb-0">
             We will provide the best service.
           </h6>
-          <the-button title="Contact Us"></the-button>
+          <the-button title="Contact Us" :fill="true"></the-button>
         </div>
       </div>
     </div>

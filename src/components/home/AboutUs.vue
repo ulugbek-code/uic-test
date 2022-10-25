@@ -2,10 +2,10 @@
   <section class="h-screen">
     <div class="container mx-auto h-full">
       <div class="flex h-full items-center md:gap-8">
-        <div class="hidden md:block flex-1 xl:h-3/4">
+        <div data-aos="fade-right" class="hidden md:block flex-1 xl:h-3/4">
           <img v-lazy="girl" class="h-full mx-auto" alt="" />
         </div>
-        <div class="flex-1">
+        <div data-aos="fade-left" class="flex-1">
           <h5 class="text-xl font-semibold text-zinc-800 mb-4">About Us</h5>
           <h2 class="text-4xl font-semibold leading-snug text-zinc-800 mb-5">
             We help your Health
@@ -17,7 +17,7 @@
             groups, religions and beliefs, ethnicity and the level and frequency
             of bed occupancy which continues to increase significantly.
           </p>
-          <the-button title="More About Us"></the-button>
+          <the-button title="More About Us" :fill="true"></the-button>
         </div>
       </div>
     </div>

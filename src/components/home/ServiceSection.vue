@@ -1,7 +1,7 @@
 <template>
   <section class="min-h-screen bg-sky-100">
     <div class="container h-full mx-auto flex-col py-28">
-      <div class="text-gray-800 text-center mb-32">
+      <div data-aos="flip-down" class="text-gray-800 text-center mb-32">
         <h5 class="text-xl font-semibold mb-5">Our Services</h5>
         <h2 class="text-2xl sm:text-4xl font-semibold leading-snug">
           4 Step Easy We Care Your <br />
@@ -12,6 +12,7 @@
         class="xl:w-3/4 mx-auto md:flex justify-center md:gap-x-4 lg:gap-x-12"
       >
         <div
+          data-aos="flip-up"
           class="
             each
             flex-1
@@ -22,8 +23,11 @@
             pt-20
             pb-8
             px-8
+            cursor-pointer
+            transition-all transition-duration-1000
             md:px-2
             lg:px-8
+            hover:shadow-md
           "
         >
           <img v-lazy="calendar" class="absolute left-1/2" alt="" />
@@ -35,6 +39,8 @@
         </div>
 
         <div
+          data-aos="flip-up"
+          data-aos-delay="100"
           class="
             each
             relative
@@ -45,8 +51,11 @@
             pt-20
             pb-8
             px-8
+            cursor-pointer
+            transition-all transition-duration-1000
             md:px-2
             lg:px-8
+            hover:shadow-md
           "
         >
           <img v-lazy="heart" class="absolute left-1/2" alt="" />
@@ -57,6 +66,8 @@
           </p>
         </div>
         <div
+          data-aos="flip-up"
+          data-aos-delay="200"
           class="
             each
             relative
@@ -67,8 +78,11 @@
             pt-20
             pb-8
             px-8
+            cursor-pointer
+            transition-all transition-duration-1000
             md:px-2
             lg:px-8
+            hover:shadow-md
           "
         >
           <img v-lazy="doctor" class="absolute left-1/2" alt="" />
