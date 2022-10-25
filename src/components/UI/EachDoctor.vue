@@ -36,7 +36,7 @@ export default {
   },
   computed: {
     getImageUrl() {
-      return new URL(`./dir/${this.person}`, import.meta.url).href;
+      return new URL(`../../assets/${this.person}`, import.meta.url).href;
     },
   },
 };
