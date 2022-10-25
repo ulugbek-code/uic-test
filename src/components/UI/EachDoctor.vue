@@ -7,7 +7,7 @@
     @mouseleave="isOpened = false"
   >
     <img
-      v-lazy="avatar"
+      v-lazy="getImageUrl"
       alt=""
       id="hero-img'"
       class="w-full object-cover drop-shadow-md"
@@ -32,8 +32,12 @@ export default {
   data() {
     return {
       isOpened: false,
-      avatar: new URL(this.person, import.meta.url).href,
     };
+  },
+  computed: {
+    getImageUrl() {
+      return new URL(`./dir/${this.person}`, import.meta.url).href;
+    },
   },
 };
 </script>

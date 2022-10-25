@@ -14,28 +14,28 @@
         class="md:flex flex-wrap justify-center gap-8 gap-y-20 mb-12 lg:mb-0"
       >
         <each-doctor
-          :person="'../../assets/person1.jpg'"
+          person="person1.jpg"
           name="dr. Moeharman, Sp. THT.KL"
           orientation="Orthodontist"
           fade="fade-right"
           delay="100"
         ></each-doctor>
         <each-doctor
-          person="../../assets/person2.png"
+          person="person2.png"
           name="ANTONIUS JANSEN"
           orientation="Pediatric"
           fade="fade-right"
           delay="0"
         ></each-doctor>
         <each-doctor
-          person="../../assets/person3.png"
+          person="person3.png"
           name="dr. NADYA NAVIRA"
           orientation="Dentist"
           fade="fade-left"
           delay="0"
         ></each-doctor>
         <each-doctor
-          person="../../assets/person4.png"
+          person="person4.png"
           name="MUHAMMAD ALI SYAHPUTRA"
           orientation="Dentist"
           fade="fade-left"
@@ -53,13 +53,6 @@ export default {
   components: {
     EachDoctor,
     DoctorCard,
-  },
-  data() {
-    return {
-      // person2: new URL("../../assets/person2.png", import.meta.url).href,
-      // person3: new URL("../../assets/person3.png", import.meta.url).href,
-      // person4: new URL("../../assets/person4.png", import.meta.url).href,
-    };
   },
 };
 </script>
